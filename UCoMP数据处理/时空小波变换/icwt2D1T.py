@@ -9,7 +9,7 @@ def f_morlet_2d1t(kx, ky, omega, a_s, a_t, theta, epsilon=0.5, k0=-6, omega0=6):
     ky_ = a_s * (ky * cos_theta - kx * sin_theta)
 
     result = a_s*cp.sqrt(a_t/epsilon)
-    result = result * cp.exp(-0.5*((omega_-omega0)**2 + epsilon*(kx_/epsilon-k0)**2 + ky_**2))
+    result = result * cp.exp(-0.5*((omega_-omega0)**2 + (kx_/cp.sqrt(epsilon)-k0)**2 + ky_**2))
     return result * cp.sqrt(8*cp.pi**3)
 
 def cwt_2d1t(s, kx, ky, omega, dx, dy, dt, epsilon=0.5, k0=-6, omega0=6):
@@ -17,7 +17,7 @@ def cwt_2d1t(s, kx, ky, omega, dx, dy, dt, epsilon=0.5, k0=-6, omega0=6):
     kx_cp = dx*cp.asarray(kx[None, None, None, :, None, None], dtype=cp.float32)
     ky_cp = dy*cp.asarray(ky[None, None, None, None, :, None], dtype=cp.float32)
     # 计算a_s和theta
-    a_s_cp = epsilon*cp.abs(k0)/cp.sqrt(kx_cp**2 + ky_cp**2)
+    a_s_cp = cp.sqrt(epsilon)*cp.abs(k0)/cp.sqrt(kx_cp**2 + ky_cp**2)
     theta_cp = cp.arctan2(ky_cp, kx_cp)
     del kx_cp, ky_cp
     # 计算a_t
@@ -47,7 +47,7 @@ def icwt_2d1t(w, kx, ky, omega, dx, dy, dt, epsilon=0.5, k0=-6, omega0=6):
     kx_cp = dx*cp.asarray(kx[None, None, None, :, None, None], dtype=cp.float32)
     ky_cp = dy*cp.asarray(ky[None, None, None, None, :, None], dtype=cp.float32)
     # 计算a_s和theta
-    a_s_cp = epsilon*cp.abs(k0)/cp.sqrt(kx_cp**2 + ky_cp**2)
+    a_s_cp = cp.sqrt(epsilon)*cp.abs(k0)/cp.sqrt(kx_cp**2 + ky_cp**2)
     theta_cp = cp.arctan2(ky_cp, kx_cp)
     del kx_cp, ky_cp
     # 计算a_t
@@ -68,7 +68,7 @@ def icwt_2d1t(w, kx, ky, omega, dx, dy, dt, epsilon=0.5, k0=-6, omega0=6):
     # 计算被积函数
     f_w_cp *= f_psi_cp
     del f_psi_cp
-    f_w_cp /= (a_t_cp**2 * k0**2 * epsilon**2)
+    f_w_cp /= (a_t_cp**2 * k0**2 * epsilon)
     del a_t_cp
     # 进行积分
     a_t_i = cp.abs(omega0)/dt/cp.asarray(omega, dtype=cp.float32)
@@ -88,4 +88,4 @@ def icwt_2d1t(w, kx, ky, omega, dx, dy, dt, epsilon=0.5, k0=-6, omega0=6):
     result = cp.asnumpy(f_w_cp.real).astype(np.float32)
     del f_w_cp
 
-    return result / np.sqrt(epsilon**5 * k0**4 * omega0**2 / np.pi**3)
+    return result * np.sqrt(epsilon**3 * k0**4 * omega0**2/np.pi**7) / 16
