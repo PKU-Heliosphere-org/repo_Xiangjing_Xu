@@ -1,3 +1,6 @@
+import cupy as cp
+import numpy as np
+
 def f_morlet_2d1t(kx, ky, omega, a_s, a_t, theta, epsilon=2, k0=-6, omega0=6):
     cos_theta = cp.cos(theta)
     sin_theta = cp.sin(theta)
