@@ -1,23 +1,20 @@
-import cupy as cp
-import numpy as np
-
-def f_morlet_2d1t(kx, ky, omega, a_s, a_t, theta, epsilon=0.5, k0=-6, omega0=6):
+def f_morlet_2d1t(kx, ky, omega, a_s, a_t, theta, epsilon=2, k0=-6, omega0=6):
     cos_theta = cp.cos(theta)
     sin_theta = cp.sin(theta)
     omega_ = a_t * omega
     kx_ = a_s * (kx * cos_theta + ky * sin_theta)
     ky_ = a_s * (ky * cos_theta - kx * sin_theta)
 
-    result = a_s*cp.sqrt(a_t/epsilon)
-    result = result * cp.exp(-0.5*((omega_-omega0)**2 + (kx_/cp.sqrt(epsilon)-k0)**2 + ky_**2))
-    return result * cp.sqrt(8*cp.pi**3)
+    result = a_s * cp.sqrt(a_t * epsilon) * cp.sqrt(8*cp.pi**3)
+    result = result * cp.exp(-0.5*((omega_-omega0)**2 + epsilon*(kx_-k0)**2 + ky_**2))
+    return result
 
-def cwt_2d1t(s, kx, ky, omega, dx, dy, dt, epsilon=0.5, k0=-6, omega0=6):
+def cwt_2d1t(s, kx, ky, omega, dx, dy, dt, epsilon=2, k0=-6, omega0=6):
     # 转换kx、ky为像素坐标并转换为cupy数组
     kx_cp = dx*cp.asarray(kx[None, None, None, :, None, None], dtype=cp.float32)
     ky_cp = dy*cp.asarray(ky[None, None, None, None, :, None], dtype=cp.float32)
     # 计算a_s和theta
-    a_s_cp = cp.sqrt(epsilon)*cp.abs(k0)/cp.sqrt(kx_cp**2 + ky_cp**2)
+    a_s_cp = cp.abs(k0)/cp.sqrt(kx_cp**2 + ky_cp**2)
     theta_cp = cp.arctan2(ky_cp, kx_cp)
     del kx_cp, ky_cp
     # 计算a_t
@@ -42,12 +39,12 @@ def cwt_2d1t(s, kx, ky, omega, dx, dy, dt, epsilon=0.5, k0=-6, omega0=6):
     del f_s_cp
     return result
 
-def icwt_2d1t(w, kx, ky, omega, dx, dy, dt, epsilon=0.5, k0=-6, omega0=6):
+def icwt_2d1t(w, kx, ky, omega, dx, dy, dt, epsilon=2, k0=-6, omega0=6):
     # 转换kx、ky为像素坐标并转换为cupy数组
     kx_cp = dx*cp.asarray(kx[None, None, None, :, None, None], dtype=cp.float32)
     ky_cp = dy*cp.asarray(ky[None, None, None, None, :, None], dtype=cp.float32)
     # 计算a_s和theta
-    a_s_cp = cp.sqrt(epsilon)*cp.abs(k0)/cp.sqrt(kx_cp**2 + ky_cp**2)
+    a_s_cp = cp.abs(k0)/cp.sqrt(kx_cp**2 + ky_cp**2)
     theta_cp = cp.arctan2(ky_cp, kx_cp)
     del kx_cp, ky_cp
     # 计算a_t
@@ -68,7 +65,7 @@ def icwt_2d1t(w, kx, ky, omega, dx, dy, dt, epsilon=0.5, k0=-6, omega0=6):
     # 计算被积函数
     f_w_cp *= f_psi_cp
     del f_psi_cp
-    f_w_cp /= (a_t_cp**2 * k0**2 * epsilon)
+    f_w_cp /= (a_t_cp**2 * k0**2)
     del a_t_cp
     # 进行积分
     a_t_i = cp.abs(omega0)/dt/cp.asarray(omega, dtype=cp.float32)
@@ -88,4 +85,4 @@ def icwt_2d1t(w, kx, ky, omega, dx, dy, dt, epsilon=0.5, k0=-6, omega0=6):
     result = cp.asnumpy(f_w_cp.real).astype(np.float32)
     del f_w_cp
 
-    return result * np.sqrt(epsilon**3 * k0**4 * omega0**2/np.pi**7) / 16
+    return result * np.sqrt(k0**4 * omega0**2 / np.pi**7 / epsilon) / 16
