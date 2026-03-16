@@ -9,7 +9,7 @@ def f_morlet_2d1t(kx, ky, omega, a_s, a_t, theta, epsilon=2, k0=-6, omega0=6):
     ky_ = a_s * (ky * cos_theta - kx * sin_theta)
 
     result = a_s * cp.sqrt(a_t * epsilon) * cp.sqrt(8*cp.pi**3)
-    result = result * cp.exp(-0.5*((omega_-omega0)**2 + epsilon*(kx_-k0)**2 + ky_**2))
+    result = result * cp.exp(-0.5*((omega_-omega0)**2 + epsilon*(kx_-0)**2 + (ky_-k0)**2))
     return result
 
 def cwt_2d1t(s, kx, ky, omega, dx, dy, dt, epsilon=2, k0=-6, omega0=6):
