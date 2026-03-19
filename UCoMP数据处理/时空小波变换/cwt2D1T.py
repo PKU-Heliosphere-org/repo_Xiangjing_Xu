@@ -1,7 +1,19 @@
 import cupy as cp
 import numpy as np
 
-def f_morlet_2d1t(kx, ky, omega, a_s, a_t, theta, epsilon=2, k0=-6, omega0=6):
+# def f_morlet_2d1t(kx, ky, omega, a_s, a_t, theta, epsilon=2, k0=-6, omega0=6):
+#     cos_theta = cp.cos(theta)
+#     sin_theta = cp.sin(theta)
+#     omega_ = a_t * omega
+#     kx_ = a_s * (kx * cos_theta + ky * sin_theta)
+#     ky_ = a_s * (ky * cos_theta - kx * sin_theta)
+#
+#     result = a_s * cp.sqrt(a_t * epsilon) * cp.sqrt(8*cp.pi**3)
+#     result = result * cp.exp(-0.5*((omega_-omega0)**2 + epsilon*(kx_-0)**2 + (ky_-k0)**2))
+#     return result
+def f_morlet_2d1t(kx, ky, omega, a_s, a_t, theta, epsilon=2, k0=(0, 6), omega0=6):
+    k0x = k0[0]
+    k0y = k0[1]
     cos_theta = cp.cos(theta)
     sin_theta = cp.sin(theta)
     omega_ = a_t * omega
@@ -9,7 +21,8 @@ def f_morlet_2d1t(kx, ky, omega, a_s, a_t, theta, epsilon=2, k0=-6, omega0=6):
     ky_ = a_s * (ky * cos_theta - kx * sin_theta)
 
     result = a_s * cp.sqrt(a_t * epsilon) * cp.sqrt(8*cp.pi**3)
-    result = result * cp.exp(-0.5*((omega_-omega0)**2 + epsilon*(kx_-0)**2 + (ky_-k0)**2))
+    result = result * (cp.exp(-0.5*(omega_-omega0)**2) - cp.exp(-0.5*(omega0**2 + omega_**2)))
+    result = result * (cp.exp(-0.5*(epsilon*(k0x-kx_)**2 + (k0y-ky_)**2)) - cp.exp(-0.5*(epsilon*(k0x**2+kx_**2) + k0y**2+ky_**2)))
     return result
 
 def cwt_2d1t(s, kx, ky, omega, dx, dy, dt, epsilon=2, k0=-6, omega0=6):
