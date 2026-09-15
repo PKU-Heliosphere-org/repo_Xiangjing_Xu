@@ -126,7 +126,7 @@ def icwt_2d1t(w, kx, ky, omega, dx, dy, dt, epsilon=1.0, k0=6.0, omega0=6.0):
     result = cp.asnumpy(f_w_cp.real).astype(np.float32)
     del f_w_cp
 
-    return sign*result / np.sqrt(dx*dy*dt) / c_psi(epsilon, k0, omega0)
+    return sign*result / np.sqrt(dx*dy*dt) / c_psi(k0, omega0, epsilon)
 
 def split_array(m, n):
     if n < 1:
