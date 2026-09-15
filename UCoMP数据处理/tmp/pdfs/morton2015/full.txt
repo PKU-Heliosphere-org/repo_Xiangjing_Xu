@@ -1,0 +1,971 @@
+ARTICLE
+Received 6 Feb 2015 | Accepted 14 Jun 2015 | Published 27 Jul 2015                      DOI: 10.1038/ncomms8813         OPEN
+
+Investigating Alfvénic wave propagation in
+coronal open-ﬁeld regions
+R.J. Morton1,2, S. Tomczyk2 & R. Pinto3,4
+
+
+
+The physical mechanisms behind accelerating solar and stellar winds are a long-standing
+astrophysical mystery, although recent breakthroughs have come from models invoking the
+turbulent dissipation of Alfvén waves. The existence of Alfvén waves far from the Sun has
+been known since the 1970s, and recently the presence of ubiquitous Alfvénic waves
+throughout the solar atmosphere has been conﬁrmed. However, the presence of atmospheric
+Alfvénic waves does not, alone, provide sufﬁcient support for wave-based models; the
+existence of counter-propagating Alfvénic waves is crucial for the development of turbulence.
+Here, we demonstrate that counter-propagating Alfvénic waves exist in open coronal
+magnetic ﬁelds and reveal key observational insights into the details of their generation,
+reﬂection in the upper atmosphere and outward propagation into the solar wind. The results
+enhance our knowledge of Alfvénic wave propagation in the solar atmosphere, providing
+support and constraints for some of the recent Alfvén wave turbulence models.
+
+
+
+
+1 Department of Mathematics and Information Sciences, Northumbria University, Newcastle Upon Tyne NE1 8ST, UK. 2 High Altitude Observatory, National
+
+Center for Atmospheric Research, Boulder, Colorado 80307-3000, USA. 3 UPS-OMP, IRAP, Université de Toulouse, 14 Avenue Edouard Belin -314000
+Toulouse, France. 4 CNRS, IRAP, 9 Avenue colonel Roche, BP 44346, F-31028 Toulouse, France. Correspondence and requests for materials should be
+addressed to R.J.M. (email: richard.morton@northumbria.ac.uk).
+
+NATURE COMMUNICATIONS | 6:7813 | DOI: 10.1038/ncomms8813 | www.nature.com/naturecommunications                                                     1
+                                                & 2015 Macmillan Publishers Limited. All rights reserved.
+ARTICLE                                                                               NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8813
+
+
+
+
+I
+    t is now well known that the fast solar wind originates from        kink modes appearing omnipresent along ﬁne-scale magnetic
+    within open magnetic ﬁeld regions in the Sun’s atmosphere,          structures. The exact relationship between the motions
+    for example, coronal holes, with wind acceleration beginning        encapsulated by the non-thermal width measurements and the
+in the transition region and low corona1–5. However, the                wave motions seen in images is still unclear, typiﬁed by the
+mechanism(s) responsible for heating the coronal plasma                 apparent disparate measured amplitudes (and, hence, energetics).
+and accelerating the solar wind within the open ﬁelds is still          This is likely someway due to the complex dependence of non-
+unclear. A host of different physical models exist to explain this      thermal line widths on the resolution of the instrument, line of
+phenomena6 and one broad category of models relies on the               sight integration and the addition of different sources of motion,
+propagation, reﬂection and dissipation of Alfvén waves7–11.            that is, ﬂows and the multitude of MHD wave modes32–34.
+Alfvén waves are perfect for the transport of energy as they are          Nevertheless, the associated ﬂux of energy estimated to be
+incompressible, making it difﬁcult for their energy to be               carried by the Alfvénic waves at the coronal base appears to be
+dissipated without the presence of large gradients in the Alfvén       sufﬁcient to meet the requirements for heating the coronal
+speed. This property should allow them to propagate out into the        plasma and/or solar wind acceleration. Although, again, there are
+extended solar atmosphere and deposit their energy and                  still some remaining issues that need to be clariﬁed with respect
+momentum beyond the critical point and the point of                     to the energy ﬂux31,35–37 (also, see the Results section).
+temperature maximum, an important feature needed to explain                The presence of Alfvénic waves in the chromosphere and
+the acceleration of fast solar winds9,12,13. These Alfvén waves        corona does not, however, provide sufﬁcient support for
+would likely be generated towards the foot points of magnetic           acceleration of the solar wind via Alfvénic waves. For Alfvénic
+ﬂux tubes, which are rooted in the photosphere and extend out           waves to be a viable option for wind acceleration, the presence of
+into interplanetary space. In theory, after traversing the lower        counter-propagating Alfvénic waves, over an extended frequency
+solar atmosphere, the waves reach the corona where they                 range, is crucial for MHD turbulence to occur in the open-ﬁeld
+propagate and are partially reﬂected by the gradual variation in        regions. Counter-propagation allows for the nonlinear interaction
+Alfvén speed, enabling the development of magneto-                     of the waves, which leads to a turbulent cascade. To date, only
+hydrodynamic (MHD) wave turbulence7–11,14 and the                       measurements of wave amplitudes and periods exist in such
+subsequent dissipation of the energy transported by the waves.          regions18–25,30,31. Further, current coronal observations of
+   The textbook Alfvén wave, ﬁrst described by Hannes Alfvén,         Alfvénic waves place only relatively simple constraints on the
+requires the existence of an inﬁnite, homogenous plasma. In this        models, that is, non-thermal widths have provided frequency-
+scenario, other perturbations of the plasma can also be                 integrated velocity amplitudes. More rigorous constraints can be
+categorized neatly as slow and fast MHD waves. The distinct             placed on the models if insights are obtained into the evolution of
+characteristics of Alfvén waves are that they are the sole             the Alfvénic waves as they propagate from the corona out into the
+propagator of vorticity perturbations and magnetic tension is           solar wind, along with measurements of key plasma parameters,
+the dominant restoring force, in addition to incompressibility.         for example, density, magnetic ﬁeld strength.
+Conversely, slow and fast MHD waves are characterized by                   In the following, these issues are explored through the analysis
+compressibility and do not perturb vorticity15. However, these          of both spectroscopic and imaging data from ground- and space-
+characteristics are textbook ideas of MHD waves. In highly              based observatories. We investigate whether the conditions in an
+inhomogeneous plasmas, such as the solar atmosphere, MHD                open magnetic ﬁeld region are suitable for MHD turbulence to
+wave modes have mixed properties and cannot be so precisely             develop, search for indications of the waves origin and whether
+categorized. The ﬁne-scale structure in the solar atmosphere is         the observed coronal Alfvénic waves are connected to those found
+frequently modelled as a collection of over-dense, magnetic             far out in the solar wind. It is envisioned that the results will help
+waveguides. In such a setting, the wave energy is conﬁned               constrain the variety of Alfvénic wave models. This is supported
+predominantly to the regions of enhanced density. Two wave              by an exploitation of the observed waves to probe some of the key
+modes in the system share characteristics reminiscent of the            plasma parameters of the open magnetic ﬁeld region.
+textbook Alfvén wave, namely the fundamental modes of the
+torsional Alfvén wave and the fast kink wave15. The torsional
+mode causes an incompressible rotation of magnetic surfaces. The        Results
+fast kink wave generally has mixed properties. It is identiﬁed by a     The coronal multi-channel polarimeter. The Coronal Multi-
+non-axisymmetric displacement of the waveguide (or a swaying            Channel Polarimeter (CoMP)38 is used to analyse Doppler
+motion) where magnetic tension is the dominant restoring force.         velocity ﬂuctuations and their propagation in an open-ﬁeld region
+The fast kink wave is also highly incompressible, especially in the     located at the northern pole of the Sun. CoMP was the ﬁrst
+limit where the wavelength is much larger than the transverse           instrument to conﬁrm the ubiquity of Alfvénic waves in the
+scale of the density inhomogeneity that deﬁnes the waveguide16.         corona29 and, still, has an unequalled ability to observe coronal
+The kink mode also transports vorticity and shares a remarkable         velocity ﬂuctuations, over a large ﬁeld of view at high temporal
+similarity with the surface Alfvén wave15. From theses                 cadence.
+considerations, we follow Goossens et al. (ref. 15, 16) and use            The Sun, on 27 March 2012, had two dominant open-ﬁeld
+the adjective Alfvénic to describe wave modes with characteristics     regions with the southern one more readily identiﬁable. The
+similar to the textbook Alfvén waves. At present, it is unknown        southern region is marked by the presence of a coronal hole that
+whether the models of Alfvén wave turbulence remain valid if the       has extremely low emission in Fe XIII images of the corona
+Alfvénic waves of inhomogeneous plasmas were used instead. The         obtained with CoMP (Fig. 1). This lack of emission means that
+common characteristics shared by the waves could suggest that           the data preparation technique (see Methods) fails low in the
+central features of the wave turbulence models may survive.             coronal hole and as such there is no line centre intensity
+   The existence of Alfvénic ﬂuctuations far into the solar wind       measurements (or Doppler velocities/widths). The region for
+(at 1 AU) has been known for a number of years17 and their              which velocity measurements could be made is highlighted by the
+presence in the corona have been anticipated from the                   contour on the CoMP image in Fig. 1a. The northern open-ﬁeld
+measurements of non-thermal line widths18–25. Recently,                 region is less obvious but there is reduced emission at the pole
+imaging and spectroscopic observations conﬁrmed the presence            compared with the rest of the corona. The lack of an obvious
+of Alfvénic waves throughout the solar atmosphere26–31, with fast      coronal hole is also apparent in coronal Fe IX and XII emission
+
+2                                                     NATURE COMMUNICATIONS | 6:7813 | DOI: 10.1038/ncomms8813 | www.nature.com/naturecommunications
+                                          & 2015 Macmillan Publishers Limited. All rights reserved.
+NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8813                                                                                                                                          ARTICLE
+
+                         a                                              Intensity in CoMP 10,746.2 Å filter           b HMI magnetogram and PFSS extrapolation
+
+                                             1,000
+
+
+                                              500
+
+                         Solar Y (arcsec)
+                                                0
+
+
+                                             –500
+
+
+                                            –1,000
+
+
+                                                          –1,000                –500      0      500    1,000
+                                                                                  Solar X (arcsec)
+
+                                                     c                                                  Intensity in AIA 171 Å filter
+                                                                        1,200                                                    d                                  Unsharp mask
+
+
+
+
+                                                                                                                                   Distance (arcsec)
+                                                                                                                                                       120
+                                                                        1,100                                                                           80
+
+                                                                                                                                                        40
+                                                                        1,000
+                                                     Solar Y (arcsec)
+
+
+
+
+                                                                                                                                                         0
+                                                                                                                                                             0         100         200
+                                                                                                                                                                 Distance (arcsec)
+                                                                         900
+
+
+                                                                         800
+
+
+                                                                         700
+
+
+                                                                         600
+                                                                                      –400          –200               0                                200                  400
+                                                                                                                Solar X (arcsec)
+
+Figure 1 | The solar corona. (a) An intensity image of the corona as seen in the infrared Fe XIII emission line, where the disk of the Sun has been occulted.
+The image is enhanced with a radial gradient ﬁlter for visual purposes only. The white contour in the corona demarcates the region for which Doppler
+velocities could be measured. (b) A magnetogram, based on Helioseismic and Magnetic Imager (HMI) data and evolved with the surface-ﬂux assimilation
+model, demonstrates the photospheric magnetic ﬁeld and is over-plotted with magnetic ﬁeld lines from the PFSS potential ﬁeld extrapolation. The purple
+and green lines show open-ﬁeld regions of negative and positive polarity, while the white lines show closed ﬁeld regions. (c) An enlarged image of the polar
+region as seen with SDO/AIA in the Fe IX coronal emission line. Fine-scale structures exist at the limb and are visible as elongated intensity enhancements.
+(d) An unsharp masked cut-out of a portion of the open-ﬁeld region (box in c) clearly reveals this ﬁne-scale magnetic structure extending radially away
+from the surface. The red dashed lines in c and d shows the position of the slit used to generate the time–distance diagram in Fig. 5a.
+
+from higher resolution, full disk images provided by the Solar                                                   The existence of counter-propagating Alfvénic waves. We focus
+Dynamics Observatory (SDO) Atmospheric Imaging Assembly                                                          on the northern open-ﬁeld region and examine the Doppler
+(AIA), although radially orientated, ﬁeld-aligned ﬁne-scale                                                      velocities in this part of the corona. It is evident from the data
+magnetic structures are visible (Fig. 1c,d). The relationship of                                                 that there is a predominantly outward propagating Doppler signal
+this ﬁne-scale magnetic structure to plumes and inter-plumes is                                                  in this region. To analyse the ﬂuctuations in the Doppler velo-
+unclear from the current data set. We are able to say that they are                                              cities, we use two different methods to extract the data in the
+much narrower than the classic plumes, which are reported to                                                     form of velocity time–distance diagrams (Fig. 2). The two inde-
+span B30 Mm (40 arcseconds) on average.                                                                          pendent methods are used to validate the analysis techniques and
+   To conﬁrm the presence of open ﬁelds in this region, we use                                                   results of each other. For the ﬁrst method, the crude assumption
+the evolving surface-ﬂux assimilation model and potential ﬁeld                                                   is made that the direction of potential wave propagation is strictly
+source surface (PFSS) extrapolation tool39 (the extrapolation is                                                 in the North–South direction. Individual Doppler velocity time–
+shown in Fig. 1b). The southern coronal hole is seen in the                                                      distance diagrams are generated from vertical strips of pixels in
+extrapolation as a large open-ﬁeld region that has some presence                                                 the boxed region (shown in Fig. 2a). The presence of the outward
+on the solar disk, while the northern open-ﬁeld region is                                                        propagating Doppler velocity signals is visible in these diagrams
+restricted to high latitudes. There is a direct correspondence                                                   and so is the periodic nature of these features, implying that the
+between the locations of weak emission at low coronal heights in                                                 observed signals correspond to MHD waves.
+the CoMP data and the open-ﬁeld lines in the PFSS extrapolation.                                                    The power spectrum for the Doppler velocity time–distance
+We note that the visible structure in the region of interest                                                     diagrams is determined for a range of frequencies (f) and
+remains practically unchanged throughout the observations,                                                       wavenumbers (k) in the vertical direction, and the outward and
+indicating little or no large-scale changes in the magnetic                                                      inward propagating signals are decomposed. To analyse the
+topology of the region.                                                                                          waves, both an f–k diagram (Fig. 2) and wavenumber-integrated
+
+NATURE COMMUNICATIONS | 6:7813 | DOI: 10.1038/ncomms8813 | www.nature.com/naturecommunications                                                                                                 3
+                                                                                & 2015 Macmillan Publishers Limited. All rights reserved.
+ARTICLE                                                                                                                                        NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8813
+
+
+                                                                                                         Intensity in CoMP 10,746.2 Å filter
+                     a
+
+                                                                 1,200
+
+
+
+
+                                              Solar Y (arcsec)
+                                                                 1,000
+
+
+
+                                                                  800
+
+
+
+                                                                  600
+                                                                                            –500                             0                              500
+                                                                                                                      Solar X (arcsec)
+
+                     b                                                   Doppler velocity time–distance diagram
+                                                                                                                                  c          Doppler velocity time–distance diagram
+                    Height (r/R sun –1)
+
+
+
+
+                                            0.16
+
+                                            0.12
+
+                                            0.08
+                                                         0               1,000      2,000     3,000           4,000               0          1,000       2,000     3,000       4,000
+                                                                                       Time (s)                                                             Time (s)
+                                                                                                       –2        –1           0        1        2
+
+                     d                                                         Averaged power spectrum                            e                  Averaged power spectrum
+                                            0.14
+                        Wavenumber (Mm–1)
+
+
+
+
+                                            0.12
+                                            0.10
+                                            0.08
+                                            0.06
+                                            0.04
+                                            0.02
+                                            0.00
+                                                –0.015 –0.010 –0.005 0.0     0.005                       0.010        0.015       –0.015 –0.010 –0.005 0.0     0.005           0.010   0.015
+                                                                 Frequency (Hz)                                                                    Frequency (Hz)
+
+                                                                                                      – 4.0     –3.5      –3.0        –2.5     –2.0
+
+Figure 2 | Propagating Alfvénic waves in the open-ﬁeld region. (a) A close-up CoMP intensity image of the northern polar region that demonstrates the
+locations of the box (dashed white lines) and the tracks (black lines) used in the two methods for isolating propagating waves in the open-ﬁeld region. The
+predominantly upwardly propagating waves can be seen in the Doppler velocity time–distance diagrams from the box (b) and from the track (c) methods,
+where the scale bar indicates the velocity (km s  1). The locations of these Doppler velocity time–distance diagrams are highlighted in a by the white dotted
+line (b) and black arrow (c). The time–distance diagrams are used to derive the corresponding frequency-wavenumber power plots for the box (d) and
+track (e) methods. A pronounced ridge of power in the negative frequency domain is clearly visible corresponding to the dominance of outward propagating
+waves. Crucially, the power plots also reveal the existence of inwardly propagating waves, but with reduced power. The scale bar indicates the power
+(km2 s  2) to the log base 10. The over-plotted white dashed lines show the calculated average inward and outward wave propagation velocities from the
+Doppler velocity time–distance diagrams.
+
+power spectra are calculated (Fig. 3). A prominent ridge in the left                                                         Starting at a particular pixel, the direction of the magnetic ﬁeld
+half of the f–k diagram corresponding to negative frequencies                                                             in the plane of sky is followed and tracks are built that are aligned
+conﬁrms the dominance of outward propagating waves. No clear                                                              with the direction of wave propagation. The tracks are almost
+ridge exists for the inward propagating waves although there is                                                           vertical with respect to the solar disk, highlighting the radial
+signiﬁcant power in the low frequency part of the spectrum. Such                                                          structure of the magnetic ﬁeld (black lines in Fig. 2). The Doppler
+ridges have also been found in f–k diagrams for large quiescent                                                           velocity time series at each point along the track is then used to
+coronal loops40.                                                                                                          build Doppler velocity time–distance maps and, as with the
+   The second method is a more reﬁned version of the ﬁrst,                                                                preceding method, the f–k diagram (Fig. 2) and the k-integrated
+providing the f–k diagram, power spectra and, in addition,                                                                power spectra (Fig. 3) are obtained. The two methods show
+the propagation velocities of the waves (see Methods). The                                                                qualitatively similar results suggesting that the wave propagation
+method explicitly determines the direction of propagation                                                                 direction is predominantly in the North–South direction, that is,
+of the waves and assuming that these propagating waves are                                                                radial for this small open-ﬁeld region.
+Alfvénic in nature, the direction of propagation deﬁnes                                                                     An estimate of the propagation speed of the waves is obtained
+the orientation of the magnetic ﬁeld in the plane of the sky.                                                             from these Doppler velocity time–distance diagrams with a
+Building up this picture of orientations over the entire                                                                  weighted average giving the typical speeds and standard deviation
+atmosphere, the local direction of the magnetic ﬁeld is                                                                   for outward propagation as 444±2 km s  1 and inward propaga-
+determined.                                                                                                               tion as 365±76 km s  1. The propagation speed of Alfvénic
+
+4                                                                                                  NATURE COMMUNICATIONS | 6:7813 | DOI: 10.1038/ncomms8813 | www.nature.com/naturecommunications
+                                                                                    & 2015 Macmillan Publishers Limited. All rights reserved.
+NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8813                                                                                                                          ARTICLE
+
+                            a                            Doppler velocity power spectra       b                                  Ratio of power spectra
+                                                                                                                    1.5
+
+
+
+
+                                                                                             Inward/outward power
+                            Power (km2 s–2)
+                                                                                                                    1.0
+                                              0.010
+
+
+                                                                                                                    0.5
+
+
+                                              0.001
+                                                                                                                    0.0
+                                                  10–4           10–3             10–2                                0.0        0.005       0.010          0.015
+                                                                Frequency (Hz)                                                       Frequency (Hz)
+
+Figure 3 | Average frequency power spectra and ratios of counter-propagating waves. The predominance of power in outward propagating waves (box
+method—black solid and track method—green dash-dot) is clear in the wavenumber-integrated power spectra (a). The spectra also provide insight into the
+power of the inward propagating waves (box method—blue dash and track method—red dash-triple dot). The total power spectrum is also shown for
+reference (dots). The horizontal dotted line is the estimate for the data noise associated with the total power spectra, while the solid horizontal line is the
+data noise split between inward and outward components. (b) The ratio of inward to outward power is displayed as a function of frequency and reveals a
+frequency-dependent trend suggestive of partial reﬂection of the waves in the corona. The vertical dashed line highlights the frequency after which noise
+begins to dominate the inward power spectra. The error bars in both plots show the s.e.m.
+
+
+
+waves is given by cpEo/k and this relationship is used to overplot
+the outward and inward velocities on the f–k diagrams in Fig. 2.                             Table 1 | Properties of the 10a fb ﬁt to the outward (Out) and
+Good agreement between the location of the ridge and the                                     inward (In) power spectra shown in Fig. 3, for the box (M1)
+estimated outward propagation speed is clear, giving conﬁdence                               and track (M2) methods.
+in the values. These speeds are signiﬁcantly greater than the
+sound speed for a 1.6 MK plasma csB150 km s  1 and, hence, the                                                             Frequency range (mHz)             a             b        v2n
+observed waves are likely Alfvénic.                                                         Out M1                                 0.2–2                  5.0±0.1    0.92±0.03    4.3
+   As mentioned, counter-propagating waves are a crucial                                                                            4–10                   4.8±0.1    1.04±0.05    3.8
+component of Alfvén wave heating/acceleration models if MHD                                 In M1                                  0.2–2                  5.3±0.1    0.98±0.03    3.8
+wave turbulence is to develop14,41, generating the small scales                              Out M2                                 0.2–2                  4.4±0.1     0.7±0.04    0.9
+                                                                                                                                    4–10                   5.0±0.1      1.1±0.05   1.4
+necessary for the dissipation of Alfvénic wave energy through
+                                                                                             In M2                                  0.2–2                  5.1±0.1    0.89±0.04    2.7
+their interaction. The power spectra obtained here provide
+evidence for the presence of both outward and inward
+propagating Alfvénic waves in open-ﬁeld regions, suggesting
+that the Alfvénic waves are at least partially reﬂected in the open
+                                                                                            the ideas presented in ref. 43, which suggest that the shape of the
+magnetic ﬁeld regions of corona, or further out.
+                                                                                            wind spectrum is already set in the low solar atmosphere, at least
+   The inwardly propagating waves can be seen to have
+                                                                                            in the low corona and transported outwards.
+signiﬁcantly less power, both in the f–k diagrams (Fig. 2c,d)
+                                                                                               Interestingly, the presence of an enhancement in power is
+and the wavenumber-integrated power spectra (Fig. 3a). In
+                                                                                            observed at B1–2 mHz in some solar wind spectra42, similar to
+Fig. 3b, the ratio of inward to outward wave power is given as a
+                                                                                            the enhancement in the coronal power spectra at frequencies of
+function of frequency. The ratio reveals a frequency dependence
+                                                                                            3–5 mHz. This may imply that the features seen in solar wind
+of the power ratio, potentially indicative of wave reﬂection in the
+                                                                                            spectra are potential remnants of the functional form of the
+corona. The results suggest (for fo6 mHz) that the low frequency
+                                                                                            power spectra set in the low solar atmosphere (o1.3 R  ). The
+waves are more readily reﬂected than high frequency waves,
+                                                                                            frequency shift of this feature between the two spectra, that is,
+which is to be expected for coronal Alfvén waves7,9. However, the
+                                                                                            coronal and at 0.3 AU, may be explained by the stretching of the
+ratio begins to increase after fB6–7 mHz. The increase in the
+                                                                                            perpendicular wavenumber scale with height owing to the radial
+ratio for these higher frequencies is likely related to the inward
+                                                                                            expansion of the magnetic ﬁeld combined with solar wind
+power being dominated by noise for f46 mHz. The noise in
+                                                                                            acceleration and magnetic ﬁeld line rotation44.
+the data has a ﬂat power spectrum and the continued decrease in
+the outward wave power with frequency 46 mHz leads to the
+increase in the ratio. The ratio ﬂattens off for f410 mHz, a sign                           Evidence p-modes play a role in Alfvénic wave generation. The
+that the outward power spectra also becomes dominated by the                                enhancement of power seen in the coronal power spectra is of
+noise. The inﬂuence of noise is conﬁrmed upon estimating the                                interest in its own right. The frequency range occupied by the
+contribution of the data noise to the power spectra.                                        power enhancement is coincidental with the frequency range of
+                                                                                            peak power of p-modes and has also been observed in CoMP
+                                                                                            power spectra for large quiescent coronal loops40. This leads us to
+Connecting the coronal waves to the solar wind. The power                                   suspect that p-modes play an important role in the generation of
+spectra of the outward and inward propagating waves are found                               Alfvénic waves in open-ﬁeld regions, as well as in the quiescent
+to have a slope of B1/f (see Table 1 for exact values) and an                               Sun.
+enhancement of power at B3–5 mHz. The functional 1/f form of                                   Theoretical considerations support the idea that p-modes can
+the coronal power spectra is also found in magnetic and velocity                            be guided into the corona by the magnetic ﬁeld. In particular,
+ﬂuctuation power spectra observed in solar wind streams in                                  mode conversion would play a dominant role in generating
+the heliosphere at 0.3 AU (64 R  )42,43. The similarity between the                        coronal Alfvénic waves45. At some height in the lower solar
+slopes of the coronal and wind power spectra lends support to                               atmosphere, dependent upon the local pressure and magnetic
+
+NATURE COMMUNICATIONS | 6:7813 | DOI: 10.1038/ncomms8813 | www.nature.com/naturecommunications                                                                                         5
+                                                              & 2015 Macmillan Publishers Limited. All rights reserved.
+ARTICLE                                                                                                                                NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8813
+
+
+ﬁeld, there will exist a canopy where the gas pressure and                                   p-modes could excite Alfvénic waves in a corona with a
+magnetic pressure are approximately equal in magnitude                                       cross-ﬁeld density structuring. However, it is clear from the
+(b ¼ 8pp/B2E1). At the canopy, a transformation from slow                                    theory that vorticity perturbations must be excited in the corona
+to fast magnetoacoustic waves can occur, with the efﬁciency                                  by the mode conversion at the transition region; otherwise Alfvén
+of this transformation dependent upon the angle between the                                  waves would not be produced. In the case of a structured corona,
+magnetic ﬁeld and the direction of wave propagation. This                                    any generated vorticity at the transition region must also be
+phenomenon has been well studied in a variety of magnetic                                    transported and the Alfvénic modes would seemingly be the best
+ﬁeld conﬁgurations and plasma conditions46–49. Although slow                                 choice for this. The observed enhanced power of the coronal
+magnetoacoustic modes above this canopy are expected to                                      Alfvénic waves coincident with the frequency range of the
+steepen and shock owing to the rise in temperature in the                                    dominant p-mode power may support this but further
+upper chromosphere, the fast magnetoacoustic waves are                                       investigation is required for the conﬁrmation of this hypothesis.
+reﬂected due to the steep gradient in Alfvén speed at the
+transition region. In the case when the gravity, magnetic ﬁeld                               Probing open-ﬁeld regions with solar magneto-seismology.
+and wave vector of the fast magnetoacoustic wave are not                                     Moving away from the power spectra, another interesting aspect
+co-planar, then there is a coupling of the fast wave to the Alfvén                          observed is that the propagation velocities of the outward waves is
+wave45,50–52. This coupling enables wave energy to cross the                                 greater than the inward. Under the assumption that there exists a
+transition region and propagate into the corona as an Alfvén                                background outﬂow, in this case most likely the solar wind, then a
+wave. Finally, regions of strong magnetic ﬁeld provide the                                   simpliﬁed relationship describing the Alfvénic waves can be
+necessary conditions for p-modes to leak out from the interior                               obtained (see Methods),
+into the atmosphere53–55, where they can then be converted via                                                                       
+various methods of mode coupling. This is of particular                                                               o ¼ U  cph kz :                      ð1Þ
+importance as the open coronal ﬁelds are generally thought to
+be rooted in the kilo-Gauss faculae that form the magnetic                                     Here, cph is the phase speed of the wave, U is the ﬂow speed
+network in the photosphere56,57. It has been estimated that a                                and z is the direction parallel to the magnetic ﬁeld. The
+sufﬁcient amount of energy can be converted from p-modes to                                  propagation speed of the outward (plus) and inward (minus)
+coronal Alfvén waves to explain the approximate energy content                              waves is modiﬁed by the presence of the ﬂow. Hence, outward
+of observed Alfvénic motions in the corona45.                                               and inward wave speed estimates obtained earlier from
+   We note that the discussed theoretical work45,50–52 has only                              the Doppler velocity time–distance diagrams suggest the
+been undertaken for a homogenous atmosphere, that is, the                                    presence of an outward moving ﬂow with an average speed
+excitation of classical Alfvén waves. It is still unknown whether                           U ¼ 31±7 km s  1. This value is comparable to the spectroscopic
+
+
+                       a                              Outward wave propagation speed map            d                                       Average outflow speed
+                                           1,200
+                        Solar Y (arcsec)
+
+
+
+
+                                                                                                                                 150
+                                                                                                    Outflow speed (km s –1)
+
+
+
+
+                                           1,150
+                                           1,100                                                                                 100
+                                           1,050
+                                           1,000                                                                                  50
+                                             950
+                                                                                                                                   0
+                       b                              Inward wave propagtion speed map
+                                           1,200
+                        Solar Y (arcsec)
+
+
+
+
+                                                                                                                                 –50
+                                           1,150                                                                                    0.0      0.05   0.10      0.15      0.20
+                                           1,100                                                                                               Height (r/Rsun–1)
+                                           1,050
+                                           1,000
+                                             950
+                                                                                                    e
+                                                                                                                                          Average velocity amplitudes
+                                                                                                                                                                                Non-thermal widths (km s –1)
+
+
+
+
+                                                                0   200 400 600                                                  1.2                                      60
+                                                                                                    Doppler velocity (km s –1)
+
+
+
+
+                       c                                            Flow map
+                                                                                                                                 1.0                                      50
+                                           1,200                                                                                 0.8
+                        Solar Y (arcsec)
+
+
+
+
+                                           1,150                                                                                                                          40
+                                                                                                                                 0.6
+                                           1,100                                                                                                                          30
+                                           1,050                                                                                 0.4
+                                           1,000                                                                                 0.2                                      20
+                                             950                                                                                 0.0                                       10
+                                               –400      –200          0           200        400                                   0.0      0.05    0.10    0.15       0.20
+                                                                Solar X (arcsec)                                                               Height (r/Rsun–1)
+
+                                                                –100   0    100
+
+Figure 4 | Measurements of the ﬂow speed along the open ﬁelds. The measured propagation speed for the outward (a) and inward (b) Alfvénic waves
+can be used to determine the ﬂow speed of plasma along the magnetic ﬁeld (c). The black and white boxes in the propagation and ﬂow maps mark the
+region that is used for determining the average values in the following panels. The scale bars indicate propagation speed (km s  1) and ﬂow speed
+(km s  1). The open-ﬁeld region is dominated by outﬂowing plasma (d), which is likely the beginnings of the solar wind and is comparable to outﬂows
+obtained from hydrodynamic wind models (dashed line). The error bars show the standard deviation of the average ﬂow. (e) The RMS Doppler velocity
+(stars) and non-thermal widths (triangles) are shown as a function of height revealing that the Alfvénic wave amplitude increases as they propagate away
+from the limb. The error bars show the s.d. of the respective quantities.
+
+6                                                                          NATURE COMMUNICATIONS | 6:7813 | DOI: 10.1038/ncomms8813 | www.nature.com/naturecommunications
+                                                             & 2015 Macmillan Publishers Limited. All rights reserved.
+NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8813                                                                                                                               ARTICLE
+
+estimate of outﬂows in open-ﬁeld regions obtained from the                                    a                                               Average propagation speed
+transition region and low coronal emission lines58.                                                                               103
+   This basic process is taken further. Following the same
+
+
+
+
+                                                                                                     Propagation speed (km s–1)
+principles outlined for creating Doppler velocity time–distance
+diagrams, estimates for the outward and inward propagation
+velocities throughout the corona are obtained (Fig. 4a,b, see
+Methods for details). Subsequently, a ﬂow map for the northern
+polar region is derived (Fig. 4c), which reveals a scene that is
+dominated by outﬂows, as should be expected if the open
+magnetic ﬁelds are a source region for the solar wind. The ﬂow is
+seen to accelerate as a function of height (Fig. 4d), tending
+towards a value of 60–70 km s  1 at 1.2 R  . The observed
+                                                                                                                                  102
+acceleration of the wind above B1.09 R  is consistent with
+predictions of wind acceleration in the low corona found from                                 b                                                Average electron density
+solutions of one-dimensional hydrodynamic solar wind models                                                                       1015
+(ref. 59—wind speed from the model is shown in Fig. 4d).
+Interestingly, the wind speed values from the model at B1.4 R 
+
+
+
+
+                                                                                        Electron density (m–3)
+(not shown in the ﬁgure) are comparable to previously measured
+outﬂow speeds in open-ﬁeld regions at the corresponding height4.                                                                  1014
+Note, the measured variation of average ﬂow speed from inﬂow to
+outﬂow below 1.09 R  is thought to be an artefact of erroneously
+high-estimated inward propagation speeds, hence inﬂow speeds,                                                                     1013
+near the occulting disk (see Methods).
+   The measured properties of the Alfvénic waves, that is,
+amplitude and propagation speed, are further exploited to gain
+estimates for the gradients of magnetic ﬁeld strength and density                                                                 1012
+in the open-ﬁeld region (see Methods). These gradients are shown
+in combination with electron density measurements available from                              c                                             Average magnetic field strength
+CoMP, an analytic model of electron densities in an open magnetic                                                                 10.0
+ﬁeld region from measurements in white light7 and the magnetic
+                                                                                                Magnetic field strength (G)
+
+
+
+ﬁeld estimated from the PFSS extrapolation model (Fig. 5a–c).
+   The estimated electron density from CoMP is found to follow
+the expected trend from the analytic model and this is supported
+by the density gradient obtained from the magneto-seismological                                                                    1.0
+inversion. In addition, the magnetic ﬁeld gradients from the
+magneto-seismology show good agreement with that predicted by
+the PFSS. The quality of the agreement between the different
+measures for the plasma parameters suggests that the physical
+properties of this particular open magnetic ﬁeld region are well                                                                   0.1
+constrained by this set of observations.                                                                                              0.0    0.05         0.10        0.15     0.20
+                                                                                                                                                    Height (r/Rsun–1)
+
+                                                                               Figure 5 | Physical properties of the open-ﬁeld region. Multiple
+Energetics of the waves. Now, combining CoMP and SDO                           complementary techniques are used to estimate the physical properties of
+observations, we are able to provide insight and constraints on the            the magnetized plasma. (a) The measured outward propagation speed
+energetics of the observed Alfvénic waves. Using SDO, we measure              (solid line), averaged over the boxed region in Fig. 4a, is compared with the
+the swaying motions of the ﬁne-scale structures (Fig. 1d) at a                 estimated propagation speed calculated from the analytic density proﬁle
+height of B1.01 R  (Fig. 6), which is interpreted in terms of the             (dashed line in b) and PFSS magnetic ﬁeld (dashed line in c). (b) The
+MHD kink wave mode28,31,60. It is likely to be these swaying                   electron density estimates from CoMP (stars) is shown and is compared
+motions that correspond to the periodic ﬂuctuations of the CoMP                with the density proﬁles obtained from magneto-seismology of solar
+Doppler velocities33. The observational signature of torsional                 atmosphere (red diamonds) and an analytic density proﬁle (dashed
+motions is oppositely directed Doppler velocities on either side of            line—ref. 7). (c) The magnetic ﬁeld strength proﬁle from the magneto-
+the ﬁne structure. Owing to large spatial resolution of CoMP and               seismology (red diamonds) is compared with the magnetic ﬁeld strength
+its inability to resolve the ﬁnest structure in the corona, these              estimated from the PFSS potential ﬁeld extrapolation (dashed line). The
+oppositely directed velocities will average to zero and have a                 error bars in all plots are the s.d. of the respective quantities.
+negligible contribution to the measured Doppler velocities. The
+kink motions are observed to be periodic, with the distribution
+of periods peaking at B300 s (3.3 mHz)—coinciding with the                     velocity amplitudes up to 40 km s  1 are found in the SDO
+frequency range of the enhanced power in the CoMP observations                 measurements (Fig. 6). The reasons for the larger amplitudes
+(Fig. 3a). The measured velocity amplitudes have an average value              inferred from the non-thermal widths are still unclear. Should
+of 14 km s  1. This value is signiﬁcantly larger than CoMP                    unresolved torsional Alfvénic motions be present along ﬁne
+Doppler velocity amplitudes (o1 km s  1—Fig. 4e), although the                structure, it would then be expected that they would contribute to
+poor spatial resolution of CoMP is known to lead to a signiﬁcant               non-thermal line broadening61. In addition, unresolved kink
+underestimation of the Doppler velocities due to bulk plasma                   motions with small displacement amplitudes (so as to be also
+motions33,34. Conversely, the measurements from SDO data are                   unobservable with SDO) would also contribute.
+almost a third of the value of the non-thermal velocities (Fig. 4e)               The upper limit on the energy ﬂux of propagating Alfvénic
+that CoMP measures (and other instruments20,21,23–25)—although                 waves37 is given by FE2or4v2rmscphd, we estimate the
+
+NATURE COMMUNICATIONS | 6:7813 | DOI: 10.1038/ncomms8813 | www.nature.com/naturecommunications                                                                                        7
+                                                & 2015 Macmillan Publishers Limited. All rights reserved.
+ARTICLE                                                                                                                  NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8813
+
+
+
+                                                 a                                      Unsharp masked intensity in AIA 171 Å
+
+                                                                 140
+
+                                                                 120
+
+                                                                 100
+
+
+
+
+                                                 Distance (Mm)
+                                                                  80
+
+                                                                  60
+
+                                                                 40
+
+                                                                 20
+
+                                                                  0
+                                                                       0              2,000                4,000               6,000
+                                                                                                         Time (s)
+
+                     b                         Displacement histogram                  c             Period histogram        d           Velocity histogram
+                                     800                                               1,200                                 500
+
+                                                                                       1,000
+                                                                                                                             400
+                                     600
+                     No. of events
+
+
+
+
+                                                                                           800
+                                                                                                                             300
+                                     400                                                   600
+                                                                                                                             200
+                                                                                           400
+                                     200
+                                                                                                                             100
+                                                                                           200
+
+                                       0                                                     0                                   0
+                                           0      500 1,000 1,500                                0   1,000 2,000 3,000               0   10      20    30     40
+                                                 Displacement (km)                                       Period (s)                      Velocity (km s–1)
+
+Figure 6 | Direct observations of Alfvénic waves with SDO. An example time–distance diagram (location shown in Fig. 1c,d) reveals that the ﬁne-scale
+magnetic structure in the open-ﬁeld region sways periodically (a), and this motion is interpreted from MHD wave theory as the kink mode. These Alfvénic
+waves observed with SDO contribute to both the CoMP Doppler velocities and non-thermal widths. The wave motion is measured directly (b–d) and the
+mean values with s.e.m. are 590±5 km for displacement amplitude, 470±6 s for the period and 14.7±0.2 km s  1 for the velocity amplitude. Error bars
+show the sample s.d. for each bin in the histogram.
+
+
+contribution of the kink MHD waves is on the order of                                                      We remind the reader that it is presently unknown whether the
+B50d W m  2, where vrms is the root mean square velocity                                                  details of the nonlinear interaction of fast kink waves are similar
+amplitude and or4 ¼ 9.5  10  13 kg m  3 is the average                                                  to those of Alfvén waves. Although the kink waves are Alfvénic,
+density at 1.01 R  extrapolated from CoMP electron density                                                the turbulent cascade of vorticity to small scales through their
+measurements. A phase speed of 250 km s  1 is also used30. The                                            nonlinear interaction seems entirely plausible. Alternatively, the
+factor d corresponds to the ﬁlling factor of the waveguides                                                kink waves are subject to mode conversion via resonant
+in the observed region. The value of d is unclear although it                                              absorption15 and the energy could be transferred to torsional
+likely o50% (see Fig. 1). The total wave energy including both                                             Alfvén waves before it is cascaded to higher frequencies.
+kink and torsional motions may be best calculated by the                                                      Further, the ratio of outward to inward wave power
+non-thermal widths, giving a total value of B300d W m  2                                                  demonstrates a frequency dependence that is suggestive of the
+at 1.06 R  (or4 ¼ 2.7  10  13 kg m  3, cph ¼ 450 km s  1)—                                            waves being partially reﬂected in the corona, that is, a decreasing
+which can meet the energy ﬂux requirements for accelerating                                                proportion of inward power to outward power with increasing
+the solar wind assuming dB50% (ref. 62). However, this number                                              frequency, which is also a feature in the models of Alfvénic wave
+should be treated with some caution as it is uncertain exactly                                             propagation.
+what physical phenomena are contributing to the non-thermal                                                   In addition to this, the power spectra reveal insights into the
+broadening25,33.                                                                                           generation of the waves and their propagation. The slope of the
+                                                                                                           power spectra for the Alfvénic waves shows a 1/f functional form
+                                                                                                           that is comparable to previously measured solar wind spectra at
+Discussion                                                                                                 0.3 AU. This implies that the waves propagate outwards from the
+The initial study presented here demonstrates the potential for                                            corona into the solar wind and at least partially maintain the
+using Doppler velocity time series of the corona to understand                                             shape of the power spectra44. Moreover, the observations reveal
+Alfvénic wave propagation through the solar atmosphere and                                                the presence of enhanced power centred on the frequencies
+connecting the dynamics of the corona to the solar wind. The                                               routinely associated with peak p-mode power. Current theoretical
+results reveal the existence of both outward and inward                                                    models suggest that the acoustic waves generated in the solar
+propagating Alfvénic waves in open magnetic ﬁeld regions—a                                                interior can generate coronal Alfvénic waves through mode
+crucial element required if MHD wave turbulence is to develop.                                             conversion45,50. We again highlight that these models use a
+
+8                                                                                      NATURE COMMUNICATIONS | 6:7813 | DOI: 10.1038/ncomms8813 | www.nature.com/naturecommunications
+                                                                           & 2015 Macmillan Publishers Limited. All rights reserved.
+NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8813                                                                                                              ARTICLE
+
+homogenous corona, which raises questions about whether these                            outward propagating motions are decomposed from the inward propagating
+                                                                                         motions. Averaging the outward and inward power over the different strips, the
+results are directly applicable to the observations presented here.                      power is integrated over wavenumber (k) and the outward and inward power
+However, the current models suggest that vorticity is generated in                       spectra are determined (Fig. 3). The spectra are ﬁt with a power law of the form
+the corona and the fast kink modes are one of the key                                    10a f b. The outward spectra are ﬁt in two frequency ranges while, the inward wave
+transporters of vorticity in an inhomogeneous plasma15. This                             power spectra are not ﬁt for the high frequency ranges due to the power spectra
+may advocate that p-modes could play a dominant role in                                  being predominantly noise in this regime. The results for the ﬁts are given in
+                                                                                         Table 1.
+generating coronal Alfvénic waves in the frequency range                                    It is highly instructive to examine the averaged f–k diagram obtainable from
+neighbouring 3 mHz. The role of acoustic waves is excluded                               the time–distance diagrams. To improve the frequency/wavenumber resolution in
+from certain surface to heliosphere solar wind acceleration                              the f–k diagrams, the mean subtracted and windowed time–distance diagrams
+models dependent on Alfvén waves due to a simplifying                                   are padded with zeros before the FFT is performed. The results are shown
+                                                                                         in Fig. 2d.
+assumption of incompressibility throughout the system (note                                  The second method used is a more reﬁned version of the ﬁrst, providing the f–k
+that not all Alfvén wave models assume incompressibility). The                          power spectra and, in addition, the propagation velocities of the waves. This
+indication that p-modes could play an important role in wave                             technique was demonstrated in ref. 40 and involves the tracking of wave packets via
+generation suggests that this assumption would neglect a                                 a coherence approach. In brief, for each pixel in the CoMP data, the time series is
+                                                                                         ﬁltered at 3.5 mHz and the coherence of this ﬁltered time series with the ﬁltered
+fundamental physical process.                                                            time series in neighbouring pixels is calculated. This provides islands of high
+   Currently, the estimates of energy ﬂux from observable                                coherence, typically elongated in a particular direction that corresponds to the
+Alfvénic (that is, kink) waves in open-ﬁeld regions advocate that                       angle of wave propagation. Assuming that these propagating waves are Alfvénic,
+there is insufﬁcient energy to meet the demands for solar wind                           the direction of propagation deﬁnes the orientation of the magnetic ﬁeld in the
+                                                                                         plane of the sky. It has been demonstrated that this technique provides magnetic
+acceleration31. Although, CoMP measurements of the 10,747 Å                              ﬁeld orientations that are in excellent agreement with the CoMP magnetic ﬁeld
+line proﬁle (and a host of other coronal emission line proﬁle                            measurements from the linear polarization of the 10,747 Å emission line40, and,
+measurements from different instruments) reveal that the velocity                        hence, supporting the assumption of Alfvénic waves.
+amplitudes from non-thermal widths imply otherwise. This                                     Starting at a particular pixel, we follow the direction of the magnetic ﬁeld in the
+would indicate that only by including contributions from both                            plane of sky using the calculated wave angles. Doing so allows tracks to be built that
+                                                                                         are aligned with the direction of wave propagation. We select 36 of these tracks that
+resolved and unresolved (and both kink and torsional) Alfvénic                          lie in the northern open-ﬁeld region and these tracks are over-plotted on an
+waves can the energy ﬂux requirement for solar wind acceleration                         intensity image in Fig. 2. The velocity time series at each point along the track is
+be potentially met exclusively by waves. Further work is clearly                         then extracted via cubic interpolation. An example of one of the time–distance
+needed to deconstruct the motions that comprise the non-                                 diagrams from a track is shown in Fig. 2c. As with the ﬁrst method, these Doppler
+                                                                                         velocity time–distance diagrams are used to create an average f–k diagram (Fig. 2e)
+thermal widths and provide a clear estimate for the energy ﬂux of                        and the k-integrated power spectra (Fig. 3a). Note that the power spectra and ratios
+all Alfvénic waves.                                                                     in Fig. 3 are calculated from the original Doppler velocity time–distance diagrams,
+   This study also demonstrates the power of magneto-seismology                          zero padding was not used to create these ﬁgures.
+of the solar atmosphere to probe the corona. Using the measured                              Note that the power in the f–k plots in Fig. 2 has been clipped between the given
+                                                                                         ranges. This leads to no loss of useful information as the signal is progressively
+properties of the waves, evidence for the origins of the solar wind                      noisier for larger k values and is done purely for aesthetic reasons.
+are seen in ﬂow maps and signiﬁcant constraints can be placed on
+other physical properties of the open magnetic ﬁeld region, that
+is, magnetic ﬁeld strength, density and the gradients of the two                         Propagation speed calculation. An estimate of the propagation speed of the
+quantities. It is hoped that the measurements of the plasma                              waves is obtained from the Doppler velocity time–distance diagrams. The
+parameters, along with the measured wave properties, for                                 procedure is based on the technique described in ref. 40, so we give a brief overview
+example, amplitude and power spectra, should provide a                                   of the technique and additions made to the process.
+                                                                                             For each pixel, a time–distance diagram is created from tracks that are built
+signiﬁcant test scenario for models of solar wind acceleration,                          using the wave propagation angles. Each time–distance diagram is subject to an
+especially those which focus on MHD Alfvénic wave turbulence.                           FFT and then decomposed into inward and outward parts, both of which are then
+                                                                                         subject to an inverse FFT. The following is applied to both the inward and outward
+                                                                                         time series separately. The time series central pixel along the track is used as the
+Methods                                                                                  ‘master time series’ and is cross-correlated with the time series of the other pixels
+Observations and data reduction. The data used here were obtained with the               along the track to ﬁnd values for the phase lag between the series. The lag values
+CoMP38 instrument on 27 March 2012 at 18:51:02 UT to 20:13:02 UT. The details of         between the different time-series are ﬁt with a linear function, which is then used to
+the acquisition and reduction of the data are fully described in refs 29,38,40 and we    align the time series to the ‘master time series’. The aligned series are then averaged
+make use of the ﬁnal data product that has a cadence of 30 s and a pixel size of         to create a higher signal-to-noise ‘master time series’. This new ‘master time series’
+400 .46 (3,234 km). The ﬁnal data product is intensities at three infrared wavelengths   is then cross-correlated with the time series of the other pixels along the track to get
+(10,745.0 Å—I1, 10,746.2 Å—I2 and 10,747.4 Å—I3), which are positions centred on         improved estimates on the lag values. A sub-resolution estimate of the phase lag is
+the Fe XIII emission line at 10,747 Å. The ﬁlter has a bandpass of 1.3 Å. Following      obtained by ﬁtting the cross-correlation peak with a parabola. This process still
+ref. 63, for each pixel in the CoMP ﬁeld of view in each time frame, we calculate the    leaves a number of high error or outlier lag data points that can negatively
+central intensity, Doppler shift and Doppler width of the line proﬁle using an           inﬂuence the result. To remove these points, two steps are applied. First, a null
+analytic ﬁt of a Gaussian to the intensity values at each wavelength position.           hypothesis test is performed. The value of the cross-correlation of any of the two
+     We also make use of SDO AIA64 and the Helioseismic and Magnetic Imager65            series is tested to see whether the two series are uncorrelated and each series is not
+data, which are taken from 18:00 UT to 20:10 UT and processed following standard         auto-correlated. For two such series with populations that are normally distributed,
+procedures.                                                                              the sample cross-correlations would have zero mean and a variance of 1/N, N being
+                                                                                         the number of samples. For a 99.7% conﬁdence interval, this assumes that the null
+                                                                                         hypothesis is incorrect if the cross-correlation value is 42.58/ON. Lag data points
+Velocity time–distance maps. Here, we describe the two complementary methods             with cross-correlation values below the cut-off are discarded. Having removed
+for analysing the wave power spectra.                                                    these data points, a linear ﬁt to the lag data points is performed. From the residuals
+    For the ﬁrst method, a box is deﬁned over the northern region, which is 20000        to the ﬁt, the residual sample standard deviation is calculated. Here, the second cut
+wide and 12500 tall (shown in Fig. 2). We make the crude assumption that,                is applied. Assuming the residuals are sampled from a normal distribution, a 99.7%
+in the boxed region, the direction of potential wave propagation is strictly in the      signiﬁcance level is calculated using t-distribution statistics for a two-tailed test.
+North–South direction. Displayed in Fig. 2 is an example of Doppler velocity             Any lag data point that lies outside this signiﬁcance range is deemed an outlier and
+time–distance diagram from a strip of pixels within the box, orientated in the           also removed. For the number of lag data points, this condition has a much stricter
+vertical direction and one pixel wide. The presence of the outward propagating           rejection criterion than, for example, Chauvenet’s criterion. These two steps appear
+Doppler velocity signals is visible and so is the periodic nature of these features.     to be a highly robust way to remove erroneous data points. A linear function is
+    For each pixel in the box, the time-averaged value of the velocity is subtracted     then ﬁt to the remaining lag data points and the propagation speed of the wave can
+from the time series. Then, for each vertical strip in the box, the time–distance        be obtained from the gradient, with the error on the gradient calculated using the
+diagram is subjected to a two-dimensional Hamming window before a two-                   sample standard deviation.
+dimensional Fast Fourier Transform (FFT) is performed and the power for a                    For the propagation speed maps (Fig. 4), the time–distance diagrams used have
+range of frequencies and wavenumbers in the vertical direction is calculated. The        varying spatial lengths depending on the position of the pixel under consideration.
+
+NATURE COMMUNICATIONS | 6:7813 | DOI: 10.1038/ncomms8813 | www.nature.com/naturecommunications                                                                                 9
+                                                      & 2015 Macmillan Publishers Limited. All rights reserved.
+ARTICLE                                                                                                  NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8813
+
+
+The standard length is 25 spatial pixels but can be shorter, for example, for pixels     the removed signal due to smoothing is found to match the estimated RMS of the
+near the occulting disk.                                                                 noise, implying that the smoothing isolates the real velocity signal and suppresses
+    Note that the inward propagation speeds suffer from great uncertainty in the         the noise. Taking the RMS value of the smoothed velocity signal and averaging, we
+lowest part of the corona. Typically this results in unphysically large values for       obtain the Doppler velocity displayed in Fig. 4e (stars).
+the propagation speed that are well in excess of the outward propagation speed and           Now, the variation in velocity amplitude for Alfvénic waves is expected to be
+the estimated Alfvén speed using the PFSS estimates for magnetic ﬁeld and density       due to changes in density alone and is given by vpne 1/4 (assuming electron and
+measurements from CoMP (Fig. 5a). It can be seen in the average power spectra            ion number densities are equal and wave damping is negligible). Using this
+(Fig. 3) that the amplitude of the inward propagating waves is comparable to the         expression, the density gradient inferred from the RMS Doppler velocity amplitude
+noise level for the higher frequencies. This has the greatest inﬂuence in the lower      (red diamonds) shows good agreement with the analytic density proﬁle (Fig. 5b).
+corona where amplitudes of waves are smaller (Fig. 4a–e). The amplitude of both          Note that the density gradient determined from the Doppler velocity has been
+inward and outward waves grow with height above the limb (Fig. 4d) and at a              scaled for comparison with the analytic density proﬁle and the density values
+certain point the inward wave amplitude becomes large enough to overcome the             obtained from the CoMP line ratios.
+noise and provide reliable measurements. In addition, the time–distance diagrams             Using the measured Doppler velocity amplitude and propagation speed, the
+for pixels of the lower corona will typically have less data points spatially, as        gradient in magnetic ﬁeld is obtained using equation (3) and shown in Fig. 5c (red
+mentioned, which leads to greater uncertainties in the results. For this reason, the     diamonds). We can compare this to the average magnetic ﬁeld strength in the
+propagation speeds are clipped at 600 km s  1 and this predominantly affects the        open-ﬁeld region estimated from the SDO/Helioseismic and Magnetic Imager
+inward wave speed (Fig. 4b).                                                             magnetograms via the PFSS extrapolation (dashed line). As we are unable to
+                                                                                         provide an exact boundary for the open-ﬁeld region, the PFSS magnetic ﬁeld is
+                                                                                         examined when averaged over latitudes 480 degrees and 485 degrees, both
+Density measurements. CoMP is able to measure both the 10,798 Å and the
+                                                                                         results incorporate the open magnetic ﬂux region seen in Fig. 1. The results from
+10,747 Å Fe XIII emission lines, the ratio of which is known to be sensitive to the
+                                                                                         both latitude boundaries show minor differences, mainly near the solar surface and
+electron number density, ne, in the corona66. At 20:29 UT, after the main 10,747 Å
+                                                                                         are practically identical in the corona. It can be seen that there is good agreement
+sequence was taken, CoMP was set to take scans at both 10,798 Å and 10,747 Å.            between the two measures for the gradients of the magnetic ﬁeld. Note that, again
+The scans are used to calculate the central intensity for each wavelength and the
+                                                                                         the magneto-seismological proﬁle has been scaled to allow comparison with the
+intensity ratio is calculated for a number of consecutive frames and averaged. Then,
+                                                                                         PFSS proﬁle.
+using the CHIANTI database v7.0 (ref. 67), electron density versus intensity ratio
+                                                                                             The PFSS and magneto-seismology results suggest that the magnetic ﬁeld
+curves are calculated for a range of heights above the photosphere taking into
+                                                                                         strength decreases only by B0.5 Gauss from 1.05 to 1.2 R  . However, the
+account the strong inﬂuence of photo-excitation on the formation of the two lines.
+                                                                                         magnetic ﬁeld strength in the corona is weak, which means that this corresponds to
+The curves are then used to calculate the electron number density in the open-ﬁeld
+                                                                                         a substantial decrease of 30–50%.
+region, which can be converted to coronal mass density using r ¼ mmpne, where m
+                                                                                             Finally, to complete the comparison between the different measures, the PFSS
+is the mean atomic weight (1.3 for coronal abundances) and mp is the proton mass,        magnetic ﬁeld and analytic density proﬁle are combined to provide an estimate for
+1.67  10  27 kg. The electron density measurements as a function of height (stars)
+                                                                                         the averaged Alfvén speed (dashed line—Fig. 5a). As noted in the main text, the
+are shown in Fig. 5b and compared with a scaled analytic density proﬁle (dashed
+                                                                                         agreement between magneto-seismology results and the PFSS and line ratio
+line—ref. 7). The measurements only cover a relatively short section of the corona
+                                                                                         measurements provides re-assurance that the plasma properties of this open
+due to weak emission in the corresponding region in 10,798 Å. As the emission
+                                                                                         magnetic ﬁeld region are well constrained.
+decreases in strength with height, the associated errors increase and the number of
+pixels with signiﬁcant signal decreases. Both these factors are likely to be
+responsible for the increased deviation in measured density from the analytic            Non-thermal widths. The non-thermal widths of the spectral lines are often used
+proﬁle with height.                                                                      as an indicator of Alfvénic wave activity20–25, so we also derive them to provide a
+                                                                                         comparison with the Doppler shift velocities. The non-thermal widths are also
+Estimating quantities from magneto-seismology. In the main text, we discussed            calculated from the Fe XIII emission line proﬁle. The peak formation temperature
+the process of estimating the ﬂow speed in the corona via magneto-seismology of          of Fe XIII is B1.6 MK, so it is expected that the line proﬁle has a thermal width
+the solar atmosphere by exploiting the measured propagation speeds of the waves.         sT ¼ O(2kbTe/mion) ¼ 21 km s  1, where kb is the Boltzmann constant, Te is the
+This relationship can be obtained from the following equation:                           electron temperature (assumed equal to the ion formation temperature) and mion is
+                                                                                     the mass of the ion. In addition, the line will be broadened by an instrumental
+                        @       @ 2           @           @ 2    2B2 @ 2 Z               width that has a value of 21 km s  1. The thermal and instrumental widths can be
+                   ri     þ Ui       Z þ re      þ Ue         Z¼           :       ð2Þ   removed from the measured Doppler width to provide the non-thermal width. As
+                       @t      @z            @t          @z       m0 @z 2
+                                                                                         with Doppler velocity, the non-thermal width is averaged horizontally over the
+    Here, Z is the perturbation of the displacement, m0 is the magnetic permeability
+                                                                                         boxed region and plotted as a function of height in Fig. 4e. The gradients in the
+of free space, and the subscript i and e correspond to quantities inside and external
+                                                                                         amplitude of both the Doppler velocities and non-thermal widths are found to be
+to the waveguide, respectively. The magnetic ﬁeld inside and external to the
+                                                                                         approximately equal, demonstrating that both are measures of Alfvénic wave
+waveguide is assumed equal. This equation describes the kink wave in a thin over-
+                                                                                         activity in the corona.
+dense waveguide in a low-beta plasma68. The condition for the waveguide to be
+thin is satisﬁed if the tube radius is much less than the wavelength. This is satisﬁed
+for the current observations where lB100 Mm. Looking for plane wave solutions            Wave energy ﬂux. SDO/AIA is used to measure the swaying motions of the
+and under the assumption that UiEUe, it is straightforward to arrive at                  magnetic ﬁeld, which can be interpreted as MHD kink waves. The magnetic ﬁeld is
+equation (1), with cph equal to the kink speed. The square of the kink speed is given    outlined by density enhancements in the corona seen in the open-ﬁeld region
+by c2k ¼ B2/(m0or4), where or4 ¼ (ri þ re)/2 is the average density.                     (Fig. 1d). The measurements are performed at a height of B1.01 R  and follow the
+    Further information about coronal plasma properties can also be obtained via         methods in ref. 31. The results are shown as histograms in Fig. 6. A median value
+magneto-seismology of the solar atmosphere, if we exploit measurements of the            for the sample population of each quantity, that is, displacement amplitude, period
+wave amplitude and propagation speed together. In particular, gradients in the           and velocity amplitude, is calculated. The distributions for each of these quantities
+density and magnetic ﬁeld strength can be estimated69,70. The results can then be        show approximately log-normal behaviour; hence, the mean value of the log-
+compared with estimates from complementary techniques, that is, the magnetic             normal distribution is calculated to give the average values. These values are given
+ﬁeld from PFSS extrapolations; density from CoMP line ratios and the analytic            in Table 2.
+model from ref. 7.                                                                           To estimate the wave energy ﬂux, we require an estimate for the mass density in
+    MHD wave theory reveals that the relationship between the measureable                the corona. This is determined from extrapolating from the CoMP electron density
+quantities and the quantities to be estimated is given by,                               measurements back to 1.01 R  using the scaled analytic function7. The value of the
+                                             rﬃﬃﬃﬃ                                       mass density used is then r ¼ 9.5  10  13 kg m  3. In addition, the phase speed at
+                                               ck 1
+                                       v¼C         pﬃﬃﬃ ;                          ð3Þ   1.01 R  is taken from the estimate of average Alfvén speed in ref. 30.
+                                                o B                                          The wave energy ﬂux from the non-thermal widths uses the density and value
+where v is the velocity perturbation amplitude of the wave, o is the angular             for non-thermal widths at a height of 1.06 R  .
+frequency, C is a constant and B is the magnetic ﬁeld strength. Due to the presence
+of the unknown C, it is only possible to ﬁnd the gradients of the density and
+magnetic ﬁeld strength. The magnitude of the quantities can only be known if we
+have initial values for both the quantities. Hence, the gradient of each quantity is      Table 2 | Measured wave properties from SDO/AIA data.
+normalized and can be scaled for comparison with the magnetic ﬁeld and density
+estimates measured by other means.                                                                                          Median                Mean from log-normal
+    To exploit equation (3), the propagation speed is averaged horizontally over the
+boxed region shown in Figs 2 and 4 and plotted as a function of height in Fig. 5a.        Displacement (km)                  470                       590±5
+    In addition to the propagation speed, the Doppler velocity amplitude is also          Period (s)                         268                        414±5
+required as a function of height. Each velocity time series in the boxed regions is       Velocity (km s  1)                11.2                      14.7±0.2
+smoothed using boxcar function of length 3. The root mean square (RMS) value of
+
+10                                                                  NATURE COMMUNICATIONS | 6:7813 | DOI: 10.1038/ncomms8813 | www.nature.com/naturecommunications
+                                                      & 2015 Macmillan Publishers Limited. All rights reserved.
+NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8813                                                                                                           ARTICLE
+
+References                                                                               35. Morton, R. J. & McLaughlin, J. A. Hi-C and AIA observations of transverse
+1. Krieger, A. S., Timothy, A. F. & Roelof, E. C. A coronal hole and its                     magnetohydrodynamic waves in active regions. Astron. Astrophys. 553, 10
+    identiﬁcation as the source of a high velocity solar wind stream. Sol. Phys. 29,         (2013).
+    505–525 (1973).                                                                      36. Goossens, M. et al. Energy content and propagation in transverse solar
+2. Hassler, D. M. et al. Solar wind outﬂow and the chromospheric magnetic                    atmospheric waves. Astrophys. J. 768, 191 (2013).
+    network. Science 283, 810–813 (1999).                                                37. Van Doorsselaere, T. et al. Energy propagation by transverse waves in multiple
+3. Peter, H. & Judge, P. G. On the Doppler shifts of solar ultraviolet emission              ﬂux tube systems using ﬁlling factors. Astrophys. J. 795, 18 (2014).
+    lines. Astrophys. J. 522, 1148–1166 (1999).                                          38. Tomczyk, S. et al. An instrument to measure coronal emission line polarization.
+4. Giordano, S. et al. Identiﬁcation of the coronal sources of the fast solar wind.          Sol. Phys. 247, 411–428 (2008).
+    Astrophys. J. 531, L79–L82 (2000).                                                   39. Schrijver, C. J. & De Rosa, M. L. Photospheric and heliospheric magnetic ﬁelds.
+5. Tu, C. Y. et al. Solar wind origin in coronal funnels. Science 308, 519–523               Sol. Phys. 212, 165–200 (2003).
+    (2005).                                                                              40. Tomczyk, S. & McIntosh, S. W. Time-distance seismology of the solar corona
+6. Cranmer, S. R. Self-consistent models of the solar wind. Space Sci. Rev. 172,             with CoMP. Astrophys. J. 697, 1384–1391 (2009).
+    145–156 (2012).                                                                      41. Verdini, A. & Velli, M. Alfvén waves and turbulence in the solar atmosphere
+7. Cranmer, S. R. & van Ballegooijen, A. A. On the generation, propagation, and              and solar wind. Astrophys. J. 662, 669–676 (2007).
+    reﬂection of Alfvén waves from the solar photosphere to the distant                 42. Roberts, D. A. Demonstrations that the solar wind is not accelerated by waves
+    heliosphere. Astrophys. J. Suppl. 156, 265–293 (2005).                                   or turbulence. Astrophys. J. 711, 1044–1050 (2010).
+8. Suzuki, T. K. & Inutsuka, S.-i. Making the corona and the fast solar wind: a self-    43. Roberts, D. A. Evolution of the spectrum of solar wind velocity ﬂuctuations
+    consistent simulation for the low-frequency Alfvén waves from the                       from 0.3 to 5 AU. J. Geophys. Res. 115, A12101 (2010).
+    photosphere to 0.3 AU. Astrophys. J. 632, L49–L52 (2005).                            44. Verdini, A., Grappin, R., Pinto, R. & Velli, M. On the Origin of the 1/f spectrum
+9. Verdini, A. et al. A turbulence-driven model for heating and acceleration of the          in the solar wind magnetic ﬁeld. Astrophys. J. 750, L33 (2012).
+    fast Wind in coronal holes. Astrophys. J. 708, L116–L120 (2010).                     45. Hansen, S. C. & Cally, P. S. Benchmarking fast-to-Alfvén mode conversion in a
+10. Perez, J. C. & Chandran, B. D. G. Direct numerical simulations of reﬂection-             cold MHD plasma. II. how to get Alfvén waves through the solar transition
+    driven, reduced magnetohydrodynamic turbulence from the sun to the Alfvén               region. Astrophys. J. 751, 31 (2012).
+    critical point. Astrophys. J. 776, 124 (2013).                                       46. Bogdan, T. J. et al. Waves in the magnetized solar atmosphere. II. waves from
+11. van der Holst, B. et al. Alfvén wave solar model (AWSoM): coronal heating.              localized sources in magnetic ﬂux concentrations. Astrophys. J. 599, 626–660
+    Astrophys. J. 782, 81 (2014).                                                            (2003).
+12. Leer, E. & Holzer, T. E. Constraints on the solar coronal temperature in regions     47. Khomenko, E., Collados, M. & Felipe, T. Nonlinear numerical simulations of
+    of open magnetic ﬁeld. Sol. Phys. 63, 143–156 (1979).                                    magneto-acoustic wave propagation in small-scale ﬂux tubes. Sol. Phys. 251,
+13. Leer, E. & Holzer, T. E. Energy addition in the solar wind. J. Geophys. Res. 85,         589–611 (2008).
+    4681–4688 (1980).                                                                    48. Vigeesh, G., Hasan, S. S. & Steiner, O. Wave propagation and energy transport
+14. Matthaeus, W. H. et al. Coronal heating by magnetohydrodynamic turbulence                in the magnetic network of the sun. Astron. Astrophys. 508, 951–962 (2009).
+    driven by reﬂected low-frequency waves. Astrophys. J. 523, L93–L96 (1999).           49. Fedun, V., Shelyag, S. & Erdélyi, R. Numerical modeling of footpoint-driven
+15. Goossens, M. et al. Surface Alfvén waves in solar ﬂux tubes. Astrophys. J. 753,         magneto-acoustic wave propagation in a localized solar ﬂux tube. Astrophys. J.
+    111 (2012).                                                                              727, 17 (2011).
+16. Goossens, M. et al. On the nature of kink MHD waves in magnetic ﬂux tubes.           50. Cally, P. S. & Goossens, M. Three-dimensional MHD wave propagation and
+    Astron. Astrophys. 503, 213 (2009).                                                      conversion to Alfvén waves near the solar surface. I. direct numerical solution.
+17. Belcher, J. W. & Davis, Jr. L. Large-amplitude Alfvén waves in the                      Sol. Phys. 251, 251–265 (2008).
+    interplanetary medium-2. J. Geophys. Res. 76, 3534–3563 (1971).                      51. Cally, P. S. & Hansen, S. C. Benchmarking fast-to-Alfvén mode conversion in a
+18. Hassler, D. M. et al. Line broadening of Mg X 609 and 625 A coronal emission             cold magnetohydrodynamic plasma. Astrophys. J. 738, 119 (2011).
+    lines observed above the solar limb. Astrophys. J. 348, L77–L80 (1990).              52. Khomenko, E. & Cally, P. S. Numerical simulations of conversion to Alfvén
+19. Seely, J. F. et al. Turbulent velocities and ion temperatures in the solar               waves in sunspots. Astrophys. J. 746, 68 (2012).
+    corona obtained from SUMER line widths. Astrophys. J. 484, L87–L90                   53. Schunker, H. & Cally, P. S. Magnetic ﬁeld inclination and atmospheric
+    (1997).                                                                                  oscillations above solar active regions. Mon. Not. R. Astron. Soc 372, 551–564
+20. Doyle, J. G., Banerjee, D. & Perez, M. E. Coronal line-width variations. Sol.            (2006).
+    Phys. 181, 91–101 (1998).                                                            54. Jain, R., Gascoyne, A. & Hindman, B. W. Interaction of p modes with a
+21. Banerjee, D., Teriaca, L., Doyle, J. G. & Wilhelm, K. Broadening of SI VIII lines        collection of thin magnetic tubes. Mon. Not. R. Astron. Soc 415, 1276–1279
+    observed in the solar polar coronal holes. Astron. Astrophys. 339, 208–214               (2011).
+    (1998).                                                                              55. Gascoyne, A., Jain, R. & Hindman, B. W. Energy loss of solar p modes due to
+22. Moran, T. G. Interpretation of coronal off-limb spectral line width                      the excitation of magnetic sausage tube waves: importance of coupling the
+    measurements. Astron. Astrophys. 374, L9–L11 (2001).                                     upper atmosphere. Astrophys. J. 789, 109 (2014).
+23. Banerjee, D., Pèrez-Suàrez, D. & Doyle, J. G. Signatures of Alfvén waves in the   56. Dowdy, Jr. J. F., Rabin, D. & Moore, R. L. On the magnetic structure of the
+    polar coronal holes as seen by EIS/Hinode. Astron. Astrophys. 501, L15–L18               quiet transition region. Sol. Phys. 105, 35–45 (1986).
+    (2009).                                                                              57. Peter, H. On the nature of the transition region from the chromosphere to the
+24. Bemporad, A. & Abbo, L. Spectroscopic signature of Alfvén waves damping in a            corona of the Sun. Astron. Astrophys. 374, 1108–1120 (2001).
+    polar coronal hole up to 0.4 solar radii. Astrophys. J. 751, 110 (2012).             58. Tian, H. et al. The nascent fast solar wind observed by the EUV imaging
+25. Chae, J., Schühle, U. & Lemaire, P. SUMER measurements of non-thermal                   spectrometer on board hinode. Astrophys. J. 709, L88–L93 (2010).
+    motions: constraints on coronal heating mechanisms. Astrophys. J. 505,               59. Pinto, R. et al. Time-dependent hydrodynamical simulations of slow solar
+    957–973 (1998).                                                                          wind, coronal inﬂows, and polar plumes. Astron. Astrophys. 497, 537–543
+26. De Pontieu, B. et al. Chromospheric Alfvénic waves strong enough to power the           (2009).
+    solar wind. Science 318, 1574–1577 (2007).                                           60. Van Doorsselaere, T. et al. Seismological demonstration of perpendicular
+27. Morton, R. J. et al. Observations of ubiquitous compressive waves in the sun’s           density structuring in the solar corona. Astron. Astrophys. 491, L9–L12 (2008).
+    chromosphere. Nat. Commun. 3, 1315 (2012).                                           61. Zaqarashvili, T. V. Observation of coronal loop torsional oscillation. Astron.
+28. Morton, R. J. & McLaughlin, J. A. High-resolution observations of active region          Astrophys. 399, L15–L18 (2003).
+    moss and its dynamics. Astrophys. J. 789, 105 (2014).                                62. Hansteen, V. H. & Leer, E. Coronal heating, densities, and temperatures and
+29. Tomczyk, S. et al. Alfvén waves in the solar corona. Science 317, 1192–1196             solar wind acceleration. J. Geophys. Res. 100, 21577–21594 (1995).
+    (2007).                                                                              63. Tian, H. et al. Observations of coronal mass ejections with the coronal
+30. McIntosh, S. W. et al. Alfvénic waves with sufﬁcient energy to power the quiet          multichannel polarimeter. Sol. Phys. 288, 637–650 (2013).
+    solar corona and fast solar wind. Nature 475, 477–480 (2011).                        64. Lemen, J. R. et al. The atmospheric imaging assembly (AIA) on the solar
+31. Thurgood, J. O., Morton, R. J. & McLaughlin, J. A. First direct measurements of          dynamics observatory (SDO). Sol. Phys. 275, 17–40 (2012).
+    transverse waves in solar polar plumes using SDO/AIA. Astrophys. J. 790, L2          65. Scherrer, P. H. et al. The helioseismic and magnetic imager (HMI) investigation
+    (2014).                                                                                  for the solar dynamics observatory (SDO). Sol. Phys. 275, 207–227 (2012).
+32. Goossens, M. et al. The transverse and rotational motions of magneto-                66. Flower, D. R. & Pineau des Forets, G. Excitation of the Fe XIII spectrum in the
+    hydrodynamic kink waves in the solar atmosphere. Astrophys. J. 788, 9 (2014).            solar corona. Astron. Astrophys. 24, 181 (1973).
+33. McIntosh, S. W. & De Pontieu, B. Estimating the ‘dark’ energy content of the         67. Landi, E. et al. CHIANTI—An atomic database for emission lines. XII. version
+    solar corona. Astrophys. J. 761, 138 (2012).                                             7 of the database. Astrophys. J. 744, 99 (2012).
+34. De Moortel, I. & Pascoe, D. J. The effects of line-of-sight integration on multi-    68. Ruderman, M. S. The effects of ﬂows on transverse oscillations of coronal loops.
+    strand coronal loop oscillations. Astrophys. J. 746, 31 (2012).                          Sol. Phys. 267, 377–391 (2010).
+
+NATURE COMMUNICATIONS | 6:7813 | DOI: 10.1038/ncomms8813 | www.nature.com/naturecommunications                                                                             11
+                                                      & 2015 Macmillan Publishers Limited. All rights reserved.
+ARTICLE                                                                                                       NATURE COMMUNICATIONS | DOI: 10.1038/ncomms8813
+
+
+
+69. Verth, G., Goossens, M. & He, J.-S. Magnetoseismological determination of                processing of the raw data. All the authors discussed the results and commented on the
+    magnetic ﬁeld and plasma density height variation in a solar spicule. Astrophys.         manuscript.
+    J. 733, L15 (2011).
+70. Morton, R. J. Magneto-seismological insights into the penumbral chromosphere
+    and evidence for wave damping in spicules. Astron. Astrophys. 566, A90 (2014).           Additional information
+                                                                                             Competing ﬁnancial interests: The authors declare no competing ﬁnancial interests.
+
+Acknowledgements                                                                             Reprints and permission information is available online at http://npg.nature.com/
+R.J.M. is grateful to Northumbria University for the award of the Anniversary Fellowship     reprintsandpermissions/
+and the Leverhulme Trust for the award of an Early Career Fellowship. R.J.M. also
+thanks the Higher Education Funding Council for England and the High Altitude                How to cite this article: Morton, R. J. et al. Investigating Alfvénic wave propagation in
+Observatory for ﬁnancial assistance that enabled this work and acknowledges IDL              coronal open-ﬁeld regions. Nat. Commun. 6:7813 doi: 10.1038/ncomms8813 (2015).
+support provided by STFC. The National Center for Atmospheric Research is sponsored
+by the National Science Foundation. R.P. was supported by the FP7 project #606692                              This work is licensed under a Creative Commons Attribution 4.0
+(HELCATS).                                                                                                     International License. The images or other third party material in this
+                                                                                             article are included in the article’s Creative Commons license, unless indicated otherwise
+Author contributions                                                                         in the credit line; if the material is not included under the Creative Commons license,
+R.J.M. and S.T. performed the analysis of the observations. R.J.M. and R.P. interpreted      users will need to obtain permission from the license holder to reproduce the material.
+the observations. S.T. designed the instrument; the observing runs and handled the initial   To view a copy of this license, visit http://creativecommons.org/licenses/by/4.0/
+
+
+
+
+12                                                                      NATURE COMMUNICATIONS | 6:7813 | DOI: 10.1038/ncomms8813 | www.nature.com/naturecommunications
+                                                         & 2015 Macmillan Publishers Limited. All rights reserved.
+
